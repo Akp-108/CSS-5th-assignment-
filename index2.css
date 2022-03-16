@@ -1,0 +1,89 @@
+body{
+    background-color: yellow;
+    padding-bottom: 20px;
+}
+.container{
+    display: grid;
+    justify-content: center;
+    margin-left: 40%;
+    width: 300px;
+    /* height: 200px; */
+    margin-top: 2em;
+}
+.transbox{
+    margin-left: 0.3em;
+    background-color: blue;
+    border: 1px solid red;
+    width: 100px;
+    height: 100px;
+}
+#transbox1{
+    transition: width 3s;
+    /* transform-origin: center; */
+    /* transition-timing-function: ease; */
+}
+#transbox1:hover{
+    width: 300px;
+}
+#transbox2{
+    transition: width 2s, height 2s;
+    
+}
+#transbox2:hover{
+    width: 300px;
+    height: 300px;
+}
+#transbox3{
+    transition: width 3s;
+    transition-timing-function: linear;
+}
+#transbox3:hover{
+    width: 300px;
+}
+#transbox4{
+    transition: width 3s;
+    transition-timing-function: ease;
+}
+#transbox4:hover{
+    width: 300px;
+}
+#transbox5{
+    transition: width 3s;
+    transition-timing-function: linear;
+}
+#transbox5:hover{
+    width: 300px;
+}
+#transbox6{
+    transition: width 3s;
+    /* transition-timing-function: step-end; */
+    transition-delay: 1s;
+}
+#transbox6:hover{
+    width: 300px;
+}
+#transbox7{
+    /* transition-timing-function: step-start; */
+    transition: width 3s;
+}
+#transbox7:hover{
+    width: 300px;
+}
+.gbox{
+    display: flex;
+    margin-top: 2em;
+}
+.gno{
+    font-weight: 700;
+    font-size: larger;
+}
+.header{
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+.footer{
+    margin-top: 5px;
+    margin-left: 50px;
+    font-size: 25px;
+}

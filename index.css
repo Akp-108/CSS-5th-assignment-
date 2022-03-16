@@ -1,0 +1,94 @@
+body{
+    background-color: yellow;
+    margin-top: 5px;
+    margin-left: 50px;
+}
+h2{
+    text-align: center;
+}
+.box{
+    display: inline-block;
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(37, 7, 7, 0.424);
+}
+
+.box1{
+    background: rgb(109, 9, 9);
+    animation-name: skew;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes skew{
+    0%{
+        transform: skewX(20deg);
+    }
+    100%{
+        transform: skewX(-20deg);
+    }
+}
+.box2{
+    background: rgb(109, 9, 9);
+    animation-name: skewY;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes skewY{
+    0%{
+        transform: skewY(-25deg);
+    }
+    100%{
+        transform: skewY(25deg);
+    }
+}
+.box3{
+    background: rgb(109, 9, 9);
+    animation-name: skewZ;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes skewZ{
+    0%{
+       transform: rotate(360deg);
+    }
+    
+}
+.span{
+    text-align: center;
+    
+}
+div.box4{
+    background: rgb(109, 9, 9);
+  animation: box4 3s linear infinite;
+}
+@keyframes box4{
+        0%{
+            transform: scale(1,1);
+        }
+        50%{
+           transform: scale(1,0.5);
+        }
+        100%{transform: scale(1,1);}
+    
+}
+div.box5{
+    background: rgb(109, 9, 9);
+  animation: box5 3s linear infinite;
+}
+@keyframes box5 {
+    0%{transform: scale(1,1);}
+    50%{transform: scale(0.5,1);}
+    100%{transform: scale(1,1);}
+}
+div.box6{
+    background: rgb(109, 9, 9);
+  animation: box6 3s linear infinite;
+}
+@keyframes box6{
+    0%{transform: rotate(0deg);}
+    50%{transform: rotate(100deg);}
+    100%{transform: rotate(0deg);}
+    
+    
+}
